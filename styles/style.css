@@ -42,9 +42,17 @@ img {
   height: auto;
 }
 
+.btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 8px;
+}
+
 /* header */
 .header {
-  height: 100vh;
+  min-height: 70vh;
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -65,7 +73,7 @@ img {
 .nav-list-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-link {
@@ -117,8 +125,77 @@ img {
 
 .btn-hero {
   width: 80%;
+  background-color: var(--clr-Bright-Blue);
+  color: #fff;
+  border: 2px solid var(--clr-Bright-Blue);
 }
 
+.productive-section {
+  background-image: url('../images/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+.productive-section .section-title {
+  text-align: center;
+  color: var(--clr-Very-Dark-Blue);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.productive-section .section-description {
+  color: var(--clr-Desaturated-Blue);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.link-fylo {
+  color: var(--clr-Moderate-Cyan);
+  border-bottom: 2px solid var(--clr-Moderate-Cyan);
+  padding-bottom: 0.5rem;
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 0.5rem auto 2rem;
+}
+
+.productive-card {
+  width: 95%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15), -6px -6px 6px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+  width: 20px;
+}
+
+.cite-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cite-details {
+  font-size: 0.75rem;
+}
 @media screen and (min-width: 768px) {
   .header {
     padding: 1rem 3.5rem;
@@ -142,5 +219,23 @@ img {
 
   .btn-hero {
     width: 60%;
+  }
+  .productive-section {
+    background-image: url('../images/bg-curve-desktop.svg');
+    flex-direction: row;
+    padding: 3rem 5rem;
+  }
+
+  .productive-section .section-title {
+    text-align: left;
+  }
+
+  .link-fylo {
+    display: inline;
+  }
+
+  .productive-card {
+    width: 80%;
+    margin: 2.5rem 0;
   }
 }
